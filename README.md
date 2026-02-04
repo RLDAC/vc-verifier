@@ -1,4 +1,4 @@
-# VC Verify
+# VC Verifier
 
 W3C-compliant Verifiable Credentials (VCs) verifier.
 
@@ -23,11 +23,10 @@ W3C-compliant Verifiable Credentials (VCs) verifier.
 
 ```bash
 # Clone the repo
-git clone https://github.com/RLDAC/vc-verify.git
-cd vc-verify
+git clone https://github.com/RLDAC/vc-verifier.git
+cd vc-verifier
 
 # Install the Python package
-cd vc-verifier
 pip install -e .
 ```
 
@@ -165,22 +164,18 @@ else:
 ## Architecture
 
 ```
-vc-verify/
+vc-verifier/
 ├── README.md                 # This file
-├── verify.js                 # JS prototype (experimental)
-├── package.json              # Node.js config
-└── vc-verifier/              # Python package (main implementation)
-    ├── pyproject.toml        # Python config
-    ├── README.md             # Detailed documentation
-    ├── LICENSE               # MIT
-    ├── src/vc_verifier/
-    │   ├── __init__.py       # Exports
-    │   ├── cli.py            # Command-line interface
-    │   ├── verifier.py       # Verification logic
-    │   ├── did_resolver.py   # DID resolution
-    │   └── statuslist.py     # StatusList2021 verification
-    └── tests/
-        └── test_verifier.py  # Unit tests
+├── pyproject.toml            # Python config
+├── LICENSE                   # MIT
+├── src/vc_verifier/
+│   ├── __init__.py           # Exports
+│   ├── cli.py                # Command-line interface
+│   ├── verifier.py           # Verification logic
+│   ├── did_resolver.py       # DID resolution
+│   └── statuslist.py         # StatusList2021 verification
+└── tests/
+    └── test_verifier.py      # Unit tests
 ```
 
 ## Verification Flow
@@ -219,8 +214,6 @@ Credential (file/URL/stdin)
 ## Development
 
 ```bash
-cd vc-verifier
-
 # Install dev dependencies
 pip install -e ".[dev]"
 
@@ -241,7 +234,7 @@ ruff check src tests
 
 ## License
 
-MIT License - see [vc-verifier/LICENSE](vc-verifier/LICENSE)
+MIT License - see [LICENSE](LICENSE)
 
 ## Author
 

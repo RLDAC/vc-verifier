@@ -1,5 +1,5 @@
 {
-  "name": "vc-verify",
+  "name": "vc-verifier",
   "version": "0.1.0",
   "type": "module",
   "main": "verify.js",
@@ -13,7 +13,7 @@
   "description": "Verifiable Credentials verifier supporting W3C Data Integrity Proofs",
   "repository": {
     "type": "git",
-    "url": "https://github.com/RLDAC/vc-verify.git"
+    "url": "https://github.com/RLDAC/vc-verifier.git"
   },
   "dependencies": {
     "@digitalbazaar/data-integrity": "^2.5.0",
